@@ -1,9 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E4E2E2"
     tools:context=".Main2Activity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROMA"
+        android:id="@+id/roma"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unete a esta banda"
+       android:layout_below="@+id/roma"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:id="@+id/unete"
+
+        />
+    <ImageView
+        android:id="@+id/guitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guitar"
+        android:layout_below="@+id/unete"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/guitarra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bass"
+        android:layout_below="@+id/guitar"
+        android:layout_centerInParent="true"
+        android:paddingRight="100dp"/>
+    <ImageView
+        android:id="@+id/drum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/drum2"
+        android:layout_below="@+id/guitar"
+        android:layout_centerInParent="true"
+        android:paddingLeft="100dp"/>
+    <ImageView
+        android:id="@+id/vocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vocal"
+        android:layout_below="@+id/guitar"
+        android:layout_centerInParent="true"
+        android:paddingTop="70dp"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/inscribir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscribirme"
+        android:layout_below="@id/vocal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/redondeado"
+        android:textColor="#ffffff"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/boton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="opcion1"
+        android:layout_below="@+id/inscribir"
+android:layout_marginLeft="120dp"
+        android:background="@drawable/fondo"
+
+        />
+
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="opcion2"
+        android:layout_toRightOf="@id/boton1"
+        android:layout_below="@id/inscribir"
+        android:layout_marginTop="10dp"
+android:background="@drawable/fondo"
+        />
+    <ImageView
+        android:id="@+id/you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/youtube"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="45dp"/>
+    <ImageView
+        android:id="@+id/telegram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/telegram"
+        android:layout_toRightOf="@id/you"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:id="@+id/pinter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pinterest"
+        android:layout_toRightOf="@id/telegram"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/linkedin"
+        android:layout_toRightOf="@id/pinter"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:id="@+id/wp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/whatsapp"
+        android:layout_toRightOf="@id/link"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
